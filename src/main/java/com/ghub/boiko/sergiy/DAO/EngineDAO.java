@@ -1,6 +1,7 @@
 package com.ghub.boiko.sergiy.DAO;
 
 import com.ghub.boiko.sergiy.model.Engine;
+import com.ghub.boiko.sergiy.util.EngineMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Repository;
