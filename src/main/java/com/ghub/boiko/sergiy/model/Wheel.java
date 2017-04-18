@@ -6,6 +6,10 @@ public class Wheel {
 
     public Wheel(){}
 
+    public Wheel(Tyres tyres) {
+        this.tyres = tyres;
+    }
+
     public Tyres getTyres() {
         return tyres;
     }
