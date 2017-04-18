@@ -7,6 +7,11 @@ public class Tyres {
 
     public Tyres(){}
 
+    public Tyres(String size, String name) {
+        this.size = size;
+        this.name = name;
+    }
+
     public String getSize() {
         return size;
     }
