@@ -36,10 +36,8 @@ public class CarDAO {
     }
 
     public void addCar(Car car){
-        Engine engine = car.getEngine();
-        Wheel wheel = car.getWheels();
-        parameters.put("ID_ENGINE", engineDao.addEngine(engine));
-        parameters.put("ID_WHEEL", wheelDao.addWheel(wheel));
+        parameters.put("ID_ENGINE", engineDao.getID());
+        parameters.put("ID_WHEEL", wheelDao.getID());
         insertCar.execute(parameters);
     }
 
