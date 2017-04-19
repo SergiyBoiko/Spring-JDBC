@@ -2,6 +2,7 @@ package com.ghub.boiko.sergiy.configuration;
 
 
 import com.ghub.boiko.sergiy.DAO.CarDAO;
+import com.ghub.boiko.sergiy.util.InitDataBase;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 @PropertySource("classpath:jdbc.properties")
 public class JDBCConfiguration {
+
     @Value("${driverclassname}")
     private String driverclassname;
     @Value("${url}")
@@ -54,6 +56,6 @@ public class JDBCConfiguration {
         return new CarDAO();
     }
 
-//    @Bean
-//    public InitDataBase initDataBase(){ return new InitDataBase(); }
+    @Bean
+    public InitDataBase initDataBase(){ return new InitDataBase(); }
 }
