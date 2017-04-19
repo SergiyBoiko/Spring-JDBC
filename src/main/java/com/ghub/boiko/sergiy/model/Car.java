@@ -15,6 +15,10 @@ public class Car {
         this.engine = engine;
     }
 
+    public Car() {
+
+    }
+
     public Wheel getWheels() {
         return wheels;
     }
